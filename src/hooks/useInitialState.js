@@ -6,6 +6,7 @@ const useInitialState = (API) => {
     trends: [],
     originals: []
   });
+
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {

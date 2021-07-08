@@ -29,12 +29,12 @@ const App = () => {
       <Header />
       <Search />
       {categories.map(
-        (category) =>
+        (category, index) =>
           videos[category].length > 0 && (
-            <Categories title={capitalize(category)}>
+            <Categories title={capitalize(category)} key={index}>
               <Carousel>
-                {videos[category].map((item) => (
-                  <CarouselItem key={item.id} {...item} />
+                {videos[category].map((item, i) => (
+                  <CarouselItem key={i} {...item} />
                 ))}
               </Carousel>
             </Categories>
