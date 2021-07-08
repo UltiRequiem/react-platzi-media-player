@@ -22,7 +22,7 @@ const App = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/initalState')
+    fetch('https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json')
       .then((response) => response.json())
       .then((data) => setVideos(data));
   }, []);
