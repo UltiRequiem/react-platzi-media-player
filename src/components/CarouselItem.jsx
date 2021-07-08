@@ -1,5 +1,8 @@
 import React from 'react';
-import '@styles/components/CarouselItem.scss'
+import '@styles/components/CarouselItem.scss';
+
+import playIcon from '../assets/static/play-icon.png';
+import plusIcon from '../assets/static/plus-icon.png';
 
 const CarouselItem = () => (
   <div className="carousel-item">
@@ -12,16 +15,16 @@ const CarouselItem = () => (
       <div>
         <img
           className="carousel-item__details--img"
-          src="../assets/play-icon.png"
+          src={playIcon}
           alt="Play Icon"
         />
         <img
           className="carousel-item__details--img"
-          src="../assets/plus-icon.png"
+          src={plusIcon}
           alt="Plus Icon"
         />
       </div>
-      <p className="carousel-item__details--title">Título descriptivo</p>
+      <p className="carousel-item__details--title">Cool Moovie 34</p>
       <p className="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
     </div>
   </div>

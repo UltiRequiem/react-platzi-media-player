@@ -1,8 +1,8 @@
 import React from 'react';
 import '@styles/components/Search.scss';
 
-const mainTitleText = '¿Que quieres ver hoy?';
-const mainInputPlaceholder = 'Buscar...';
+const mainTitleText = 'What do you wann watch today?';
+const mainInputPlaceholder = 'Search';
 
 // eslint-disable-next-line react/display-name
 export default () => (
