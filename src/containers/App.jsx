@@ -18,33 +18,21 @@ const CAROUSELS = [
   { topic: 'Others', items: [1, 2, 3, 4, 5, 6] }
 ];
 
-const App = () => {
-  const [videos, setVideos] = useState([]);
-
-  useEffect(() => {
-    fetch('https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json')
-      .then((response) => response.json())
-      .then((data) => setVideos(data));
-  }, []);
-
-  console.log(videos)
-
-  return (
-    <div className="App">
-      <Header />
-      <Search />
-      {CAROUSELS.map((carousel, index) => (
-        <Categories title={carousel.topic} key={index}>
-          <Carousel>
-            {carousel.items.map((_item, i) => (
-              <CarouselItem key={i} />
-            ))}
-          </Carousel>
-        </Categories>
-      ))}
-      <Footer />
-    </div>
-  );
-};
+const App = () => (
+  <div className="App">
+    <Header />
+    <Search />
+    {CAROUSELS.map((carousel, index) => (
+      <Categories title={carousel.topic} key={index}>
+        <Carousel>
+          {carousel.items.map((_item, i) => (
+            <CarouselItem key={i} />
+          ))}
+        </Carousel>
+      </Categories>
+    ))}
+    <Footer />
+  </div>
+);
 
 export default App;

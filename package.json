@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "npx webpack --mode production",
-    "json": "npx json-server --watch initialState.json",
-    "start": "npx webpack serve --mode development --env development"
+    "start": "npx webpack serve --config webpack.config.dev.js",
+    "json": "npx json-server --watch initialState.json"
   },
   "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com> (https://github.com/UltiRequiem)",
   "license": "MIT",
