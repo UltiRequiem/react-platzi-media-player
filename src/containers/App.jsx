@@ -12,35 +12,41 @@ import Footer from '@components/Footer';
 // Proyect Styles
 import '@styles/App.scss';
 
-const App = () => {
-  const [videos, setVideos] = useState({
-    mylist: [],
-    trends: [],
-    originals: []
-  });
+// Custom Hooks
+import useInitialState from '../hooks/useInitialState';
 
-  useEffect(() => {
-    fetch(
-      'https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json'
-    )
-      .then((res) => res.json())
-      .then((data) => setVideos(data));
-  }, []);
+const API =
+  'https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json';
+
+const App = () => {
+  const initialState = useInitialState(API);
 
   return (
     <div className="App">
       <Header />
       <Search />
 
-      <Categories title="My List">
+      {initialState.mylist.length > 0 && (
+        <Categories title="My List">
+          <Carousel>
+            <CarouselItem />
+          </Carousel>
+        </Categories>
+      )}
+
+      <Categories title="Science fiction">
         <Carousel>
-          <CarouselItem />
+          {initialState.trends.map((item) => (
+            <CarouselItem key={item.id} {...item} />
+          ))}
         </Carousel>
       </Categories>
 
-      <Categories title="My Second List">
+      <Categories title="Originals">
         <Carousel>
-          <CarouselItem />
+          {initialState.originals.map((item) => (
+            <CarouselItem key={item.id} {...item} />
+          ))}
         </Carousel>
       </Categories>
 
