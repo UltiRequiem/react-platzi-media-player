@@ -9,20 +9,20 @@ import Footer from '@components/Footer';
 
 import '@styles/App.scss';
 
-// const TOPICS = ['Movies', 'Anime', 'Others'];
-const TOPICS = [
+const CAROUSELS = [
   { topic: 'Movies', items: [1, 2, 3] },
-  { topic: 'Others', items: [1, 2] }
+  { topic: 'Anime', items: [1, 2, 3, 4] },
+  { topic: 'Others', items: [1, 2, 3, 4, 5, 6] }
 ];
 
 const App = () => (
   <div className="App">
     <Header />
     <Search />
-    {TOPICS.map((topic, index) => (
-      <Categories title={topic.topic} key={index}>
+    {CAROUSELS.map((carousel, index) => (
+      <Categories title={carousel.topic} key={index}>
         <Carousel>
-          {topic.items.map((item, i) => (
+          {carousel.items.map((_item, i) => (
             <CarouselItem key={i} />
           ))}
         </Carousel>
