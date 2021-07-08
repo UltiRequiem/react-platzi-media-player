@@ -1,3 +1,4 @@
+// React Stuff
 import React, { useState, useEffect } from 'react';
 
 // Proyect Components
@@ -8,31 +9,44 @@ import Carousel from '@components/Carousel';
 import CarouselItem from '@components/CarouselItem';
 import Footer from '@components/Footer';
 
-// Proyect Style
+// Proyect Styles
 import '@styles/App.scss';
 
-// Items
-const CAROUSELS = [
-  { topic: 'Movies', items: [1, 2, 3] },
-  { topic: 'Anime', items: [1, 2, 3, 4] },
-  { topic: 'Others', items: [1, 2, 3, 4, 5, 6] }
-];
+const App = () => {
+  const [videos, setVideos] = useState({
+    mylist: [],
+    trends: [],
+    originals: []
+  });
 
-const App = () => (
-  <div className="App">
-    <Header />
-    <Search />
-    {CAROUSELS.map((carousel, index) => (
-      <Categories title={carousel.topic} key={index}>
+  useEffect(() => {
+    fetch(
+      'https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json'
+    )
+      .then((res) => res.json())
+      .then((data) => setVideos(data));
+  }, []);
+
+  return (
+    <div className="App">
+      <Header />
+      <Search />
+
+      <Categories title="My List">
         <Carousel>
-          {carousel.items.map((_item, i) => (
-            <CarouselItem key={i} />
-          ))}
+          <CarouselItem />
         </Carousel>
       </Categories>
-    ))}
-    <Footer />
-  </div>
-);
+
+      <Categories title="My Second List">
+        <Carousel>
+          <CarouselItem />
+        </Carousel>
+      </Categories>
+
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
