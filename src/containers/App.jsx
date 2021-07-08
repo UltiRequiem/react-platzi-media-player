@@ -1,5 +1,5 @@
 // React Stuff
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // Proyect Components
 import Header from '@components/Header';
@@ -15,40 +15,31 @@ import '@styles/App.scss';
 // Custom Hooks
 import useInitialState from '../hooks/useInitialState';
 
+// Utils
+import capitalize from '../utils/capitalize';
+
 const API =
   'https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json';
 
 const App = () => {
-  const initialState = useInitialState(API);
+  const [videos, categories] = useInitialState(API);
 
   return (
     <div className="App">
       <Header />
       <Search />
-
-      {initialState.mylist.length > 0 && (
-        <Categories title="My List">
-          <Carousel>
-            <CarouselItem />
-          </Carousel>
-        </Categories>
+      {categories.map(
+        (category) =>
+          videos[category].length > 0 && (
+            <Categories title={capitalize(category)}>
+              <Carousel>
+                {videos[category].map((item) => (
+                  <CarouselItem key={item.id} {...item} />
+                ))}
+              </Carousel>
+            </Categories>
+          )
       )}
-
-      <Categories title="Science fiction">
-        <Carousel>
-          {initialState.trends.map((item) => (
-            <CarouselItem key={item.id} {...item} />
-          ))}
-        </Carousel>
-      </Categories>
-
-      <Categories title="Originals">
-        <Carousel>
-          {initialState.originals.map((item) => (
-            <CarouselItem key={item.id} {...item} />
-          ))}
-        </Carousel>
-      </Categories>
 
       <Footer />
     </div>
