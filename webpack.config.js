@@ -15,7 +15,11 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      '@styles': joiner('src/assets/styles/'),
+      '@components': joiner('src/components/')
+    }
   },
   module: {
     rules: [
@@ -49,7 +53,7 @@ module.exports = {
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({
-      filename:'assets/[name].css'
+      filename: 'assets/[name].css'
     })
   ]
 };

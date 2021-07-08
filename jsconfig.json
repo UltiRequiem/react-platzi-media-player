@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src/"
+    "baseUrl": "./src",
+    "paths": {
+      "@styles": ["assets/styles"],
+      "@components": ["components"]
+    }
   },
   "exclude": ["node_modules", "dist"]
 }
