@@ -32,12 +32,13 @@ module.exports = {
         use: [{ loader: 'html-loader' }]
       },
       {
-        test: /\.css$/,
+        test: /\.(s*)css$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader
           },
-          'css-loader'
+          'css-loader',
+          'sass-loader'
         ]
       }
     ]
@@ -48,7 +49,7 @@ module.exports = {
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css'
+      filename:'assets/[name].css'
     })
   ]
 };
