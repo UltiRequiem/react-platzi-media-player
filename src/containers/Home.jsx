@@ -21,7 +21,7 @@ import capitalize from '../utils/capitalize';
 const API =
   'https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json';
 
-const App = () => {
+const Home = () => {
   const [videos, categories] = useInitialState(API);
 
   return (
@@ -46,4 +46,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
