@@ -2,8 +2,6 @@ import React from 'react';
 
 import '@styles/Login.scss';
 
-import Footer from '@components/Footer';
-
 // Images
 import googleIcon from '../assets/static/google-icon.png';
 import twitterIcon from '../assets/static/twitter-icon.png';
@@ -36,7 +34,6 @@ const Login = () => (
         No tienes ninguna cuenta <a href="/">Regístrate</a>
       </p>
     </section>
-    <Footer />
   </section>
 );
 
