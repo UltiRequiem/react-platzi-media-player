@@ -1,5 +1,6 @@
+/* eslint-disable security/detect-object-injection */
 // React Stuff
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // Proyect Components
 import Header from '@components/Header';
 import Search from '@components/Search';
@@ -14,46 +15,14 @@ import '@styles/App.scss';
 // Utils
 import capitalize from '../utils/capitalize';
 
+// Custom Hooks
+import useInitialState from '../hooks/useInitialState';
+
 const API =
   'https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json';
 
 const Home = () => {
-  const [videos, setVideos] = useState({
-    mylist: [],
-    trends: [],
-    originals: []
-  });
-
-  const [originalVideos, setOriginalVideos] = useState({
-    mylist: [],
-    trends: [],
-    originals: []
-  });
-
-  const [categories, setCategories] = useState([]);
-
-  useEffect(() => {
-    fetch(API)
-      .then((res) => res.json())
-      .then((data) => {
-        setVideos(data);
-        setOriginalVideos(data);
-        setCategories(Object.keys(data));
-      });
-  }, []);
-
-  const print = (cat, str) => {
-    const newVideos = { ...originalVideos };
-    newVideos[cat] = originalVideos[cat].map((video) => {
-      // eslint-disable-next-line no-param-reassign
-      video.title =
-        str === video.title
-          ? `${str} (selected)`
-          : video.title.replace(' (selected)', '');
-      return video;
-    });
-    setVideos(newVideos);
-  };
+  const [videos, categories] = useInitialState(API);
 
   return (
     <div className="App">
@@ -65,11 +34,7 @@ const Home = () => {
             <Categories title={capitalize(category)} key={index}>
               <Carousel>
                 {videos[category].map((item, i) => (
-                  <CarouselItem
-                    key={i}
-                    print={() => print(category, item.title)}
-                    {...item}
-                  />
+                  <CarouselItem key={i} {...item} />
                 ))}
               </Carousel>
             </Categories>

@@ -7,14 +7,7 @@ import playIcon from '../assets/static/play-icon.png';
 import plusIcon from '../assets/static/plus-icon.png';
 
 // eslint-disable-next-line react/prop-types
-const CarouselItem = ({
-  cover,
-  title,
-  year,
-  contentRating,
-  duration,
-  print,
-}) => (
+const CarouselItem = ({ cover, title, year, contentRating, duration }) => (
   <div className="carousel-item">
     <img className="carousel-item__img" src={cover} alt="Cover" />
     <div className="carousel-item__details">
@@ -26,7 +19,6 @@ const CarouselItem = ({
         />
         <img
           className="carousel-item__details--img"
-          onClick={print}
           src={plusIcon}
           alt="Plus Icon"
         />
@@ -41,11 +33,10 @@ const CarouselItem = ({
 
 CarouselItem.propTypes = {
   cover: PropTypes.string,
-  print: PropTypes.func,
   title: PropTypes.string,
   year: PropTypes.number,
   contentRating: PropTypes.string,
-  duration: PropTypes.number,
+  duration: PropTypes.number
 };
 
 export default CarouselItem;
