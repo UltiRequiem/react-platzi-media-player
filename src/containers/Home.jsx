@@ -1,7 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable security/detect-object-injection */
 
 // React Stuff
 import React from 'react';
+
+import { connect } from 'react-redux';
 
 // Proyect Components
 import Search from '@components/Search';
@@ -9,35 +12,39 @@ import Categories from '@components/Categories';
 import Carousel from '@components/Carousel';
 import CarouselItem from '@components/CarouselItem';
 
-// Utils
-import capitalize from '../utils/capitalize';
+const Home = ({ myList = [], trends = [], originals = [] }) => (
+  <>
+    <Search isHome />
+    {myList.length > 0 && (
+      <Categories title="My List">
+        <Carousel>
+          {myList.map((item) => (
+            <CarouselItem key={item.id} {...item} isList />
+          ))}
+        </Carousel>
+      </Categories>
+    )}
+    <Categories title="Trends">
+      <Carousel>
+        {trends.map((item) => (
+          <CarouselItem key={item.id} {...item} />
+        ))}
+      </Carousel>
+    </Categories>
+    <Categories title="Originals">
+      <Carousel>
+        {originals.map((item) => (
+          <CarouselItem key={item.id} {...item} />
+        ))}
+      </Carousel>
+    </Categories>
+  </>
+);
 
-// Custom Hooks
-import useInitialState from '../hooks/useInitialState';
+const mapStateToProps = (state) => ({
+  myList: state.myList || [],
+  trends: state.trends || {},
+  originals: state.originals || {}
+});
 
-const API =
-  'https://raw.githubusercontent.com/UltiRequiem/react-media-player/main/initialState.json';
-
-const Home = () => {
-  const [videos, categories] = useInitialState(API);
-
-  return (
-    <>
-      <Search />
-      {categories.map(
-        (category, index) =>
-          videos[category].length > 0 && (
-            <Categories title={capitalize(category)} key={index}>
-              <Carousel>
-                {videos[category].map((item, i) => (
-                  <CarouselItem key={i} {...item} />
-                ))}
-              </Carousel>
-            </Categories>
-          )
-      )}
-    </>
-  );
-};
-
-export default Home;
+export default connect(mapStateToProps, null)(Home);
