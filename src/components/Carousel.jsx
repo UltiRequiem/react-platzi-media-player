@@ -1,5 +1,5 @@
 import React from 'react';
-import '@styles/components/Carousel.scss'
+import '@styles/components/Carousel.scss';
 
 // eslint-disable-next-line react/prop-types
 const Carousel = ({ children }) => (

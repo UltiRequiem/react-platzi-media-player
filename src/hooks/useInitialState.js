@@ -18,7 +18,7 @@ const useInitialState = (API) => {
       });
   }, []);
 
-  return [videos, categories];
+  return { videos, categories, setVideos };
 };
 
 export default useInitialState;

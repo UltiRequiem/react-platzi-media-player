@@ -3,7 +3,6 @@ import React from 'react';
 import '@styles/Login.scss';
 
 import Footer from '@components/Footer';
-import Header from '@components/Header';
 
 // Images
 import googleIcon from '../assets/static/google-icon.png';
@@ -11,7 +10,6 @@ import twitterIcon from '../assets/static/twitter-icon.png';
 
 const Login = () => (
   <section className="login">
-    <Header />
     <section className="login__container">
       <h2>Inicia sesión</h2>
       <form className="login__container--form">
