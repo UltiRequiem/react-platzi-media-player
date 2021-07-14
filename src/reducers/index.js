@@ -1,31 +1,33 @@
+import { ACTIONS } from '../actions';
+
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'SET_FAVORITE':
+    case ACTIONS.favorite:
       return {
         ...state,
         myList: [...state.myList, action.payload]
       };
-    case 'DELETE_FAVORITE':
+    case ACTIONS.delete:
       return {
         ...state,
         myList: state.myList.filter((items) => items.id !== action.payload)
       };
-    case 'LOGIN_REQUEST':
+    case ACTIONS.login:
       return {
         ...state,
         user: action.payload
       };
-    case 'LOGOUT_REQUEST':
+    case ACTIONS.logout:
       return {
         ...state,
         user: action.payload
       };
-    case 'REGISTER_REQUEST':
+    case ACTIONS.register:
       return {
         ...state,
         user: action.payload
       };
-    case 'GET_VIDEO_SOURCE':
+    case ACTIONS.video:
       return {
         ...state,
         playing:
