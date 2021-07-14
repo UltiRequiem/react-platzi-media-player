@@ -31,7 +31,6 @@ export const registerRequest = (payload) => ({
   type: ACTIONS.register,
   payload
 });
-
 export const getVideoSource = (payload) => ({
   type: ACTIONS.video,
   payload

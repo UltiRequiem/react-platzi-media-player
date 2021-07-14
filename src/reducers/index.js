@@ -5,7 +5,10 @@ const reducer = (state, action) => {
     case ACTIONS.favorite:
       return {
         ...state,
-        myList: [...state.myList, action.payload]
+        myList: [
+          ...state.myList.filter((item) => item.id !== action.payload.id),
+          action.payload
+        ]
       };
     case ACTIONS.delete:
       return {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Proyect Styles
+// Project Styles
 import '@styles/App.scss';
 
 import Header from './Header';
