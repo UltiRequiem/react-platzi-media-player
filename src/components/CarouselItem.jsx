@@ -21,8 +21,8 @@ const CarouselItem = (props) => {
       year,
       contentRating,
       duration
-    })
-  }
+    });
+  };
 
   const handleDeleteFavorite = (itemId) => {
     props.deleteFavorite(itemId);
@@ -63,6 +63,7 @@ const CarouselItem = (props) => {
     </div>
   );
 };
+
 
 CarouselItem.propTypes = {
   cover: PropTypes.string,

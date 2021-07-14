@@ -7,4 +7,5 @@ const gravatar = (email) => {
   return `${base}${hash}`;
 };
 
+
 export default gravatar;
