@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 import '@styles/components/Search.scss';
 
-const mainTitleText = 'What do you wann watch today?';
+const mainTitleText = 'What do you wanna watch today?';
 const mainInputPlaceholder = 'Search...';
 
 const Search = ({ isHome }) => {
