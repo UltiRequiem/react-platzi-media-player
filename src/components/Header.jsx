@@ -3,7 +3,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-
 import classNames from 'classnames';
 import gravatar from '../utils/gravatar';
 
@@ -23,7 +22,7 @@ const Header = (props) => {
 
   const headerClass = classNames('header', {
     isLogin,
-    isRegister
+    isRegister,
   });
 
   return (
@@ -38,7 +37,7 @@ const Header = (props) => {
           ) : (
             <img src={userIcon} alt="" />
           )}
-          <p>Perfil</p>
+          <p>Profile</p>
         </div>
         <ul>
           {hasUser ? (
@@ -49,12 +48,12 @@ const Header = (props) => {
           {hasUser ? (
             <li>
               <a href="#logout" onClick={handleLogout}>
-                Cerrar Sesión
+                Logout
               </a>
             </li>
           ) : (
             <li>
-              <Link to="/login">Iniciar sesión</Link>
+              <Link to="/login">Login</Link>
             </li>
           )}
         </ul>
@@ -64,11 +63,11 @@ const Header = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  user: state.user
+  user: state.user,
 });
 
 const mapDispatchToProps = {
-  logoutRequest
+  logoutRequest,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -1,6 +1,6 @@
 /* eslint-disable node/no-unpublished-require */
 
-const {join, resolve} = require('path');
+const { join, resolve } = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
