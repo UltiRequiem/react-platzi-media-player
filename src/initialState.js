@@ -1,6 +1,7 @@
 const initialState = {
   user: {},
   playing: {},
+  searchResult:[],
   myList: [],
   trends: [
     {
