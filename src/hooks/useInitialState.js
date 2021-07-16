@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const useInitialState = (API) => {
   const [videos, setVideos] = useState({
     myList: [],
     trends: [],
-    originals: []
+    originals: [],
   });
 
   const [categories, setCategories] = useState([]);

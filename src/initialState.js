@@ -14,7 +14,7 @@ const initialState = {
       duration: 164,
       cover: 'https://dummyimage.com/800x600.png/99118E/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
 
     {
@@ -26,9 +26,9 @@ const initialState = {
       year: 2002,
       contentRating: '16+',
       duration: 137,
-      cover: 'http://dummyimage.com/800x600.png/302140/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/302140/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 4,
@@ -39,9 +39,9 @@ const initialState = {
       year: 2014,
       contentRating: '16+',
       duration: 163,
-      cover: 'http://dummyimage.com/800x600.png/5472FF/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/5472FF/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 5,
@@ -52,9 +52,9 @@ const initialState = {
       year: 2014,
       contentRating: '16+',
       duration: 194,
-      cover: 'http://dummyimage.com/800x600.png/B36F20/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/B36F20/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 6,
@@ -65,9 +65,9 @@ const initialState = {
       year: 2017,
       contentRating: '16+',
       duration: 124,
-      cover: 'http://dummyimage.com/800x600.png/CCC539/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/CCC539/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 7,
@@ -78,10 +78,10 @@ const initialState = {
       year: 2011,
       contentRating: '16+',
       duration: 179,
-      cover: 'http://dummyimage.com/800x600.png/FF7A90/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/FF7A90/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
-    }
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+    },
   ],
   originals: [
     {
@@ -93,9 +93,9 @@ const initialState = {
       year: 2012,
       contentRating: '16+',
       duration: 148,
-      cover: 'http://dummyimage.com/800x600.png/306880/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/306880/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 9,
@@ -106,9 +106,9 @@ const initialState = {
       year: 2019,
       contentRating: '16+',
       duration: 128,
-      cover: 'http://dummyimage.com/800x600.png/604180/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/604180/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 10,
@@ -119,9 +119,9 @@ const initialState = {
       year: 2011,
       contentRating: '16+',
       duration: 346,
-      cover: 'http://dummyimage.com/800x600.png/FF91BA/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/FF91BA/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 11,
@@ -132,9 +132,9 @@ const initialState = {
       year: 2015,
       contentRating: '16+',
       duration: 226,
-      cover: 'http://dummyimage.com/800x600.png/45807C/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/45807C/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 12,
@@ -145,9 +145,9 @@ const initialState = {
       year: 2018,
       contentRating: '16+',
       duration: 190,
-      cover: 'http://dummyimage.com/800x600.png/577380/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/577380/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
     },
     {
       id: 13,
@@ -158,11 +158,11 @@ const initialState = {
       year: 2010,
       contentRating: '16+',
       duration: 160,
-      cover: 'http://dummyimage.com/800x600.png/5472FF/ffffff',
+      cover: 'https://dummyimage.com/800x600.png/5472FF/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
-    }
-  ]
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+    },
+  ],
 };
 
 export default initialState;

@@ -10,7 +10,7 @@ const mainInputPlaceholder = 'Search...';
 
 const Search = ({ isHome }) => {
   const inputStyle = classNames('input', {
-    isHome
+    isHome,
   });
   return (
     <section className="main">
