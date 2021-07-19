@@ -9,7 +9,7 @@ import Player from '../containers/Player';
 import NotFound from '../containers/NotFound';
 
 const App = () => (
-  <Router basename="">
+  <Router>
     <Layout>
       <Switch>
         <Route exact path="/" component={Home} />
