@@ -1075,9 +1075,9 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.15":
-  version "17.0.15"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.15.tgz#c7533dc38025677e312606502df7656a6ea626d0"
+"@types/react@*", "@types/react@^17.0.16":
+  version "17.0.16"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.16.tgz#056f40c45645761527baeb7d89d842a6abdf285a"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4710,11 +4710,11 @@ mini-create-react-context@^0.4.0:
     "@babel/runtime" "^7.12.1"
     tiny-warning "^1.0.3"
 
-mini-css-extract-plugin@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/mini-css-extract-plugin/-/mini-css-extract-plugin-2.1.0.tgz"
+mini-css-extract-plugin@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.2.0.tgz#48cb6d2bea8fa9eb36709856e003662eebb3eb92"
   dependencies:
-    schema-utils "^3.0.0"
+    schema-utils "^3.1.0"
 
 minimalistic-assert@^1.0.0:
   version "1.0.1"
