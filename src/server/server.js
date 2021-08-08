@@ -10,12 +10,13 @@ const config = {
   ENV: 'production'
 };
 
-if (config.ENV === 'production') {
-  console.log('Environment set to production.');
-  const webpackDevMiddleware = require('webpack-dev-middleware');
-  const webpackHotMiddleware = require('webpack-hot-middleware');
-  const compiler = webpack(require('../../webpack.config'));
-  const serverConfig = { port: config.PORT, hot: true };
+if (config.ENV === 'development') {
+  console.log('Environment set to development.');
+
+  const compiler = webpack(require('../../webpack.config.dev'));
+
+  app.use(require('webpack-dev-middleware')(compiler, { port: config.PORT, hot: true }));
+  app.use(require('webpack-hot-middleware')(compiler));
 }
 
 app.get('*', (req, res) => {
