@@ -1013,9 +1013,9 @@
   dependencies:
     "@types/unist" "*"
 
-"@types/mini-css-extract-plugin@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@types/mini-css-extract-plugin/-/mini-css-extract-plugin-2.0.1.tgz"
+"@types/mini-css-extract-plugin@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@types/mini-css-extract-plugin/-/mini-css-extract-plugin-2.2.0.tgz#fafa938acd38708759510572bb739450399ed08d"
   dependencies:
     "@types/node" "*"
     tapable "^2.2.0"
