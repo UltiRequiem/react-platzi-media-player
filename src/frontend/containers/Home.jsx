@@ -2,15 +2,15 @@
 /* eslint-disable security/detect-object-injection */
 
 // React Stuff
-import React from 'react';
+import React from 'react'
 
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
 // Proyect Components
-import Search from '@components/Search';
-import Categories from '@components/Categories';
-import Carousel from '@components/Carousel';
-import CarouselItem from '@components/CarouselItem';
+import Search from '@components/Search'
+import Categories from '@components/Categories'
+import Carousel from '@components/Carousel'
+import CarouselItem from '@components/CarouselItem'
 
 const Home = ({ myList = [], trends = [], originals = [] }) => (
   <>
@@ -39,12 +39,12 @@ const Home = ({ myList = [], trends = [], originals = [] }) => (
       </Carousel>
     </Categories>
   </>
-);
+)
 
 const mapStateToProps = (state) => ({
   myList: state.myList || [],
   trends: state.trends || {},
   originals: state.originals || {}
-});
+})
 
-export default connect(mapStateToProps, null)(Home);
+export default connect(mapStateToProps, null)(Home)

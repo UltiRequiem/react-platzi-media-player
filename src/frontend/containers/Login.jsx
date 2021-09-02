@@ -1,34 +1,33 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-import Header from '@components/Header';
-import { loginRequest } from '../actions';
+import Header from '@components/Header'
+import { loginRequest } from '../actions'
 
+import '@styles/components/Login.scss'
 
-import '@styles/components/Login.scss';
-
-import googleIcon from '../assets/static/google-icon.png';
-import twitterIcon from '../assets/static/twitter-icon.png';
+import googleIcon from '../assets/static/google-icon.png'
+import twitterIcon from '../assets/static/twitter-icon.png'
 
 const Login = (props) => {
   const [form, setValues] = useState({
     email: ''
-  });
+  })
 
   const handleInput = (event) => {
     setValues({
       ...form,
       [event.target.name]: event.target.value
-    });
-  };
+    })
+  }
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    props.loginRequest(form);
-    props.history.push('/');
-  };
+    event.preventDefault()
+    props.loginRequest(form)
+    props.history.push('/')
+  }
 
   return (
     <>
@@ -68,16 +67,16 @@ const Login = (props) => {
             </div>
           </section>
           <p className="login__container--register">
-            No tienes ninguna cuenta {' '}<Link to="/register">Regístrate</Link>
+            No tienes ninguna cuenta <Link to="/register">Regístrate</Link>
           </p>
         </section>
       </section>
     </>
-  );
-};
+  )
+}
 
 const mapDispatchToProps = {
   loginRequest
-};
+}
 
-export default connect(null, mapDispatchToProps)(Login);
+export default connect(null, mapDispatchToProps)(Login)

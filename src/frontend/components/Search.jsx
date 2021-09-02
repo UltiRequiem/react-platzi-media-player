@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React from 'react'
 
-import classNames from 'classnames';
+import classNames from 'classnames'
 
-import '@styles/components/Search.scss';
+import '@styles/components/Search.scss'
 
-const mainTitleText = 'What do you wanna watch today?';
-const mainInputPlaceholder = 'Search...';
+const mainTitleText = 'What do you wanna watch today?'
+const mainInputPlaceholder = 'Search...'
 
 const Search = ({ isHome }) => {
   const inputStyle = classNames('input', {
-    isHome,
-  });
+    isHome
+  })
   return (
     <section className="main">
       <h2 className="main__title">{mainTitleText}</h2>
@@ -21,7 +21,7 @@ const Search = ({ isHome }) => {
         placeholder={mainInputPlaceholder}
       />
     </section>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search

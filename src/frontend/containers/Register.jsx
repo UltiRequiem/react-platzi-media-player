@@ -1,29 +1,29 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { registerRequest } from '../actions';
-import '@styles/components/Register.scss';
+import React, { useState } from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { registerRequest } from '../actions'
+import '@styles/components/Register.scss'
 
 const Register = (props) => {
   const [form, setValues] = useState({
     email: '',
     name: '',
-    password: '',
-  });
+    password: ''
+  })
 
   function handleInput(event) {
     setValues({
       ...form,
-      [event.target.name]: event.target.value,
-    });
+      [event.target.name]: event.target.value
+    })
   }
 
   function handleSubmit(event) {
-    event.preventDefault();
+    event.preventDefault()
     // eslint-disable-next-line react/prop-types
-    props.registerRequest(form);
-    props.history.push('/');
+    props.registerRequest(form)
+    props.history.push('/')
   }
 
   return (
@@ -57,11 +57,11 @@ const Register = (props) => {
         <Link to="/login">Login</Link>
       </section>
     </section>
-  );
-};
+  )
+}
 
 const mapDispatchToProps = {
-  registerRequest,
-};
+  registerRequest
+}
 
-export default connect(null, mapDispatchToProps)(Register);
+export default connect(null, mapDispatchToProps)(Register)

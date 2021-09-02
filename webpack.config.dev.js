@@ -1,14 +1,14 @@
 /* eslint-disable node/no-unpublished-require */
 
-const { join, resolve } = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
+const { join, resolve } = require('path')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const webpack = require('webpack')
 
 /** @param {string} dir */
-const joiner = (dir) => join(__dirname, dir);
+const joiner = (dir) => join(__dirname, dir)
 /** @param {string} dir */
-const resolver = (dir) => resolve(__dirname, dir);
+const resolver = (dir) => resolve(__dirname, dir)
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
@@ -77,4 +77,4 @@ module.exports = {
       filename: 'assets/[name].css'
     })
   ]
-};
+}

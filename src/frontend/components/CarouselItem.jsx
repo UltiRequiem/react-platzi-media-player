@@ -1,18 +1,18 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable react/prop-types */
-import React from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import { setFavorite, deleteFavorite } from '../actions';
-import '../assets/styles/components/CarouselItem.scss';
-import playIcon from '../assets/static/play-icon.png';
-import plusIcon from '../assets/static/plus-icon.png';
-import removeIcon from '../assets/static/remove-icon.png';
+import React from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
+import { setFavorite, deleteFavorite } from '../actions'
+import '../assets/styles/components/CarouselItem.scss'
+import playIcon from '../assets/static/play-icon.png'
+import plusIcon from '../assets/static/plus-icon.png'
+import removeIcon from '../assets/static/remove-icon.png'
 
 const CarouselItem = (props) => {
-  const { id, cover, title, year, contentRating, duration, isList } = props;
+  const { id, cover, title, year, contentRating, duration, isList } = props
   const handleSetFavorite = () => {
     props.setFavorite({
       id,
@@ -21,12 +21,12 @@ const CarouselItem = (props) => {
       year,
       contentRating,
       duration
-    });
-  };
+    })
+  }
 
   const handleDeleteFavorite = (itemId) => {
-    props.deleteFavorite(itemId);
-  };
+    props.deleteFavorite(itemId)
+  }
   return (
     <div className="carousel-item">
       <img className="carousel-item__img" src={cover} alt={title} />
@@ -61,9 +61,8 @@ const CarouselItem = (props) => {
         </p>
       </div>
     </div>
-  );
-};
-
+  )
+}
 
 CarouselItem.propTypes = {
   cover: PropTypes.string,
@@ -71,11 +70,11 @@ CarouselItem.propTypes = {
   year: PropTypes.number,
   contentRating: PropTypes.string,
   duration: PropTypes.number
-};
+}
 
 const mapDispatchToProps = {
   setFavorite,
   deleteFavorite
-};
+}
 
-export default connect(null, mapDispatchToProps)(CarouselItem);
+export default connect(null, mapDispatchToProps)(CarouselItem)

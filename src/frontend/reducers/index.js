@@ -1,4 +1,4 @@
-import { ACTIONS } from '../actions';
+import { ACTIONS } from '../actions'
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -9,27 +9,27 @@ const reducer = (state, action) => {
           ...state.myList.filter((item) => item.id !== action.payload.id),
           action.payload
         ]
-      };
+      }
     case ACTIONS.delete:
       return {
         ...state,
         myList: state.myList.filter((items) => items.id !== action.payload)
-      };
+      }
     case ACTIONS.login:
       return {
         ...state,
         user: action.payload
-      };
+      }
     case ACTIONS.logout:
       return {
         ...state,
         user: action.payload
-      };
+      }
     case ACTIONS.register:
       return {
         ...state,
         user: action.payload
-      };
+      }
     case ACTIONS.video:
       return {
         ...state,
@@ -37,10 +37,10 @@ const reducer = (state, action) => {
           state.trends.find((item) => item.id === Number(action.payload)) ||
           state.originals.find((item) => item.id === Number(action.payload)) ||
           []
-      };
+      }
     default:
-      return state;
+      return state
   }
-};
+}
 
-export default reducer;
+export default reducer

@@ -1,7 +1,7 @@
 const initialState = {
   user: {},
   playing: {},
-  searchResult:[],
+  searchResult: [],
   myList: [],
   trends: [
     {
@@ -15,7 +15,7 @@ const initialState = {
       duration: 164,
       cover: 'https://dummyimage.com/800x600.png/99118E/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
 
     {
@@ -29,7 +29,7 @@ const initialState = {
       duration: 137,
       cover: 'https://dummyimage.com/800x600.png/302140/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ const initialState = {
       duration: 163,
       cover: 'https://dummyimage.com/800x600.png/5472FF/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 5,
@@ -55,7 +55,7 @@ const initialState = {
       duration: 194,
       cover: 'https://dummyimage.com/800x600.png/B36F20/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 6,
@@ -68,7 +68,7 @@ const initialState = {
       duration: 124,
       cover: 'https://dummyimage.com/800x600.png/CCC539/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 7,
@@ -81,8 +81,8 @@ const initialState = {
       duration: 179,
       cover: 'https://dummyimage.com/800x600.png/FF7A90/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
-    },
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+    }
   ],
   originals: [
     {
@@ -96,7 +96,7 @@ const initialState = {
       duration: 148,
       cover: 'https://dummyimage.com/800x600.png/306880/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 9,
@@ -109,7 +109,7 @@ const initialState = {
       duration: 128,
       cover: 'https://dummyimage.com/800x600.png/604180/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 10,
@@ -122,7 +122,7 @@ const initialState = {
       duration: 346,
       cover: 'https://dummyimage.com/800x600.png/FF91BA/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 11,
@@ -135,7 +135,7 @@ const initialState = {
       duration: 226,
       cover: 'https://dummyimage.com/800x600.png/45807C/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 12,
@@ -148,7 +148,7 @@ const initialState = {
       duration: 190,
       cover: 'https://dummyimage.com/800x600.png/577380/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
     },
     {
       id: 13,
@@ -161,9 +161,9 @@ const initialState = {
       duration: 160,
       cover: 'https://dummyimage.com/800x600.png/5472FF/ffffff',
       description: 'Vestibulum ac est lacinia nisi venenatis tristique',
-      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
-    },
-  ],
-};
+      source: 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4'
+    }
+  ]
+}
 
-export default initialState;
+export default initialState

@@ -1,5 +1,5 @@
-import React from 'react';
-import '@styles/components/Footer.scss';
+import React from 'react'
+import '@styles/components/Footer.scss'
 
 const Footer = () => (
   <footer className="footer">
@@ -7,6 +7,6 @@ const Footer = () => (
     <a href="/">Declaration of Privacity</a>
     <a href="/">Help Center</a>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

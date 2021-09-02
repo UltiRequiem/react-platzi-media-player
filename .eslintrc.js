@@ -37,4 +37,4 @@ module.exports = {
     'node/no-unsupported-features/es-syntax': 'off',
     'react/react-in-jsx-scope': 'off'
   }
-};
+}

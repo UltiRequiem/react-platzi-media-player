@@ -1,5 +1,5 @@
-import React from 'react';
-import '@styles/components/Categories.scss';
+import React from 'react'
+import '@styles/components/Categories.scss'
 
 // eslint-disable-next-line react/prop-types
 const Categories = ({ children, title }) => (
@@ -7,6 +7,6 @@ const Categories = ({ children, title }) => (
     <h3 className="categories__title">{title}</h3>
     {children}
   </div>
-);
+)
 
-export default Categories;
+export default Categories
