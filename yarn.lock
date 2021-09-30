@@ -1268,10 +1268,10 @@
   dependencies:
     "@types/unist" "*"
 
-"@types/mini-css-extract-plugin@^2.0.1":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@types/mini-css-extract-plugin/-/mini-css-extract-plugin-2.2.0.tgz#fafa938acd38708759510572bb739450399ed08d"
-  integrity sha512-euW/Y51OoAWsAuqtxIGV7Y++EW4dKHMj7NSxHoTRD6SqK1vziYhGfDWTmtlf4jkjIrzUW88NpVXMfiJESysZAA==
+"@types/mini-css-extract-plugin@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@types/mini-css-extract-plugin/-/mini-css-extract-plugin-2.3.0.tgz#2637bc09347ffa21b75f91b93dd00ce3d3971872"
+  integrity sha512-DeEkl1HsCDij3P7tfIWhQENVXz4wE17Ew0+5+KRh5HAcFcIZMfQg4HxKwEIqulVALYyv7JKisn4BPu3f7OHPVQ==
   dependencies:
     "@types/node" "*"
     tapable "^2.2.0"
