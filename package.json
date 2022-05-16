@@ -54,7 +54,7 @@
     "mini-css-extract-plugin": "^2.6.0",
     "node-sass": "^7.0.1",
     "pm2": "^5.1.2",
-    "prettier-eslint": "^14.0.3",
+    "prettier-eslint": "^15.0.0",
     "prettier-plugin-jsdoc": "^0.3.38",
     "prop-types": "^15.8.1",
     "sass-loader": "^12.4.0",
