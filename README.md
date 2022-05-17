@@ -6,4 +6,5 @@
 
 ![Cover](./assets/cover.png)
 
-Bakend of this Proyect = [UltiRequiem/backend-nodejs-platzi](https://github.com/UltiRequiem/backend-nodejs-platzi)
+Bakend of this Proyect =
+[UltiRequiem/backend-nodejs-platzi](https://github.com/UltiRequiem/backend-nodejs-platzi)

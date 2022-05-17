@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: ['prettier-plugin-jsdoc'],
+  plugins: ["prettier-plugin-jsdoc"],
   tabWidth: 2,
-  trailingComma: 'none',
+  trailingComma: "none",
   semi: false,
-  singleQuote: true
-}
+  singleQuote: true,
+};

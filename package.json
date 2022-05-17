@@ -4,10 +4,11 @@
   "description": "A cool media player done with React",
   "main": "src/index.js",
   "scripts": {
-    "build": "npx webpack --mode production",
-    "start": "npx webpack serve --config webpack.config.dev.js",
-    "replit": "npx pm2 serve dist --spa",
-    "express": "npx nodemon src/server/index.js"
+    "build": "webpack --mode production",
+    "start": "webpack serve --config webpack.config.dev.js",
+    "replit": "pm2 serve dist --spa",
+    "express": "nodemon src/server/index.js",
+    "format": "prettier --write 'src/**/*.{js,jsx,json,md,yml}'"
   },
   "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com> (https://github.com/UltiRequiem)",
   "license": "MIT",

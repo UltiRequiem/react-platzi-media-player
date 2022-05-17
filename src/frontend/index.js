@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import { Provider } from 'react-redux'
-import { createStore, compose } from 'redux'
+import { compose, createStore } from 'redux'
 
 import reducer from './reducers'
 
